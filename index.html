@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viatrac Saúde e Bem-Estar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Viatrac Bem-Estar</a>
+            <div class="d-flex text-center">
+                <span id="usuarioBoasVindas" class="text-white fs-5"></span>
+            </div>
+            <button class="btn btn-outline-light" onclick="logout()">Sair</button>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-6">Plataforma de Saúde e Bem-Estar</h1>
+            <p class="lead">Desafio diário: Mantenha-se hidratado para uma vida mais saudável!</p>
+        </div>
+    </section>
+
+    <div class="container my-5">
+        <h3 class="mb-4 text-center titulo-desafio">Desafio Diário de Hidratação</h3>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card p-3">
+                    <h5 class="card-title">1 Litro de Água pela Manhã</h5>
+                    <p class="card-text">Beba 1 litro de água durante o período da manhã para começar o dia bem hidratado.</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="aguaManha" onchange="verificarConclusao()">
+                        <label class="form-check-label" for="aguaManha">Concluído</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-3">
+                    <h5 class="card-title">1 Litro de Água à Tarde</h5>
+                    <p class="card-text">Beba 1 litro de água durante a tarde para manter-se hidratado o dia todo.</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="aguaTarde" onchange="verificarConclusao()">
+                        <label class="form-check-label" for="aguaTarde">Concluído</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="conclusao-container" id="conclusaoContainer">
+            <h4>
+                <span class= "emoji-animado">&#127881 Parabéns! Você concluiu o desafio de hoje! &#127881</span>
+            </h4>
+            <button class="btn btn-success mt-3" onclick="reiniciarDesafio()">Reiniciar Desafio</button>
+        </div>
+    </div>
+
+    <div class="dicas-container">
+        <p class="dicas-texto"> &#128161 Dica: Mantenha uma garrafa de água por perto. &#9749 Faça pausas para alongamento a cada 2 horas.  &#127947 Faça exercícios regulamentes.</p>
+    </div>   
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Viatrac | Projeto de Extensão - Saúde e Bem-Estar</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
