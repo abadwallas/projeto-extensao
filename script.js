@@ -56,6 +56,5 @@ function resetarProgressoDiario() {
 
 function logout() {
     localStorage.removeItem("usuarioLogado");
-    localStorage.removeItem("progressoHidratacao");
     window.location.href = "login.html";
 }
