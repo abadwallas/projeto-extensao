@@ -10,7 +10,7 @@ Projeto de extensão desenvolvido para incentivar práticas saudáveis no ambien
 
 ## Como acessar
 [Acesse o projeto aqui](https://abadwallas.github.io/projeto-extensao/login.html)
- - Usuario: viatrac
+ - Usuario: admin
  - Senha: 123
 
 ## Tecnologias utilizadas
