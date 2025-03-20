@@ -4,7 +4,7 @@ window.onload = function() {
         window.location.href = "login.html";
     } else {
         const nomeFormatado = usuarioLogado.charAt(0).toUpperCase() + usuarioLogado.slice(1);
-        document.getElementById("usuarioBoasVindas").textContent = `👋 Olá, ${nomeFormatado}!`;
+        document.getElementById("usuarioBoasVindas").textContent = `Olá, ${nomeFormatado}!`;
         restaurarProgresso();
         resetarProgressoDiario();
     }
